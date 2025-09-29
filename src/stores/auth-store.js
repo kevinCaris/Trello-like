@@ -28,7 +28,7 @@ export const useAuthStore = defineStore('auth', {
       this.loading = true
       this.error = null
       try {
-        const { data } = await axios.post('http://localhost:10008/wp-json/jwt-auth/v1/token', {
+        const { data } = await axios.post('https://mvvm-twp.kesug.com/wp-json/jwt-auth/v1/token', {
           username,
           password
         })

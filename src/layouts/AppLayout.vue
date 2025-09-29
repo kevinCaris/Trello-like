@@ -29,14 +29,14 @@ import Sidebar from '@/components/Sidebar.vue'
 import { usePreferencesStore } from '@/stores/preferencesStore'
 
 const images = [
-  '../public/img2.webp',
-  '../public/img1.webp',
-  '../public/img3.jpg',
-  '../public/img6.webp',
-  '../public/img8.jpg',
-  '../public/img11.webp',
-  '../public/img5.webp',
-  '../public/img10.jpg',
+  '/img2.webp',
+  '/img1.webp',
+  '/img3.jpg',
+  '/img6.webp',
+  '/img8.jpg',
+  '/img11.webp',
+  '/img5.webp',
+  '/img10.jpg',
 ]
 
 const preferences = usePreferencesStore()

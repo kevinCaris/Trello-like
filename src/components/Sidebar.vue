@@ -76,7 +76,7 @@
         >
           <div class="relative">
             <img
-              :src="authStore.user.avatar || 'public/default-avatar.png'"
+              :src="authStore.user.avatar || '/default-avatar.png'"
               alt="Avatar"
               class="w-8 h-8 rounded-full border-2 border-gray-300 dark:border-gray-600"
             />

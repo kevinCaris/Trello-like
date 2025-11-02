@@ -61,7 +61,7 @@ L’application sera disponible sur : http://localhost:5173 (ou le port affiché
 
 ## Lien vers l' application héherger
 
-L’application sera disponible sur : [https://vue-postit-app.vercel.app/]
+L’application sera disponible sur : [https://trello-like-ten.vercel.app/login]
 
 ## Lien vers l' api
 

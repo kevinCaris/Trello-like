@@ -28,22 +28,22 @@ export const useAuthStore = defineStore('auth', {
       this.loading = true
       this.error = null
       try {
-        const { data } = await axios.post('https://mvvm-twp.kesug.com/wp-json/jwt-auth/v1/token', {
+        const { data } = await axios.post('https://trellolike.free.nf/wp-json/jwt-auth/v1/token', {
           username,
           password
         })
 
-        if (data.token) {
-          this.token = data.token
+        if (data.data.token) {
+          this.token = data.data.token
           this.user = {
-            name: data.user_display_name,
-            email: data.user_email,
-            nicename: data.user_nicename
+            name: data.data.user_display_name,
+            email: data.data.user_email,
+            nicename: data.data.user_nicename
           }
-          localStorage.setItem('wp_token', data.token)
+          localStorage.setItem('wp_token', data.data.token)
           this.error = null
         } else {
-          this.error = data.message || 'Login failed'
+          this.error = data.data.message || 'Login failed'
         }
       } catch (err) {
 
@@ -69,7 +69,7 @@ export const useAuthStore = defineStore('auth', {
       if (token) this.token = token
     },
     async fetchUsers() {
-      if (!this.token) return
+      //      if (!this.token) return
       this.loading = true
       this.error = null
       try {
